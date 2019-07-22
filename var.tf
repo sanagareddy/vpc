@@ -1,10 +1,10 @@
 
 variable "accesskey" {
-  default = "AKIATEINLZH4YCHD4ZVG"
+  default = ""
 }
 
 variable "secretkey" {
-  default = "pdMReBHERmNONFyAsio1uunRZyOfX35QbIKTLZRy"
+  default = ""
 }
 
 variable "env" {
