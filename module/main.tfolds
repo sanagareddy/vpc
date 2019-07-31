@@ -1,0 +1,13 @@
+#Creating modules
+
+module "m.vpc" {
+	tags = {"Name" = "M_VPC"}
+	cidr_block = "192.168.0.0/24"
+	vpc_id = "${module.m_vpc.vpcz}"
+}
+
+module "instance1" {
+	ami = "ami-09aa695110875052b"
+	subnet_id = "${module.m_vpc.subs1}"
+	instance_type = "t2.micro"
+}
